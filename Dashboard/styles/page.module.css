@@ -1,0 +1,79 @@
+/* styles/page.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+  }
+  
+  .contentBox {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px var(--card-shadow);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .header {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color var(--transition-duration);
+  }
+  
+  .link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background: var(--button-background);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: background var(--transition-duration), transform var(--transition-duration), box-shadow var(--transition-duration);
+  }
+  
+  .link:hover {
+    background: var(--button-hover);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .link:active {
+    background: var(--button-active);
+    transform: scale(1);
+  }
+  
+  .footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+  
+  .toggleContainer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .toggleButton {
+    cursor: pointer;
+    background: var(--button-background);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background var(--transition-duration), transform var(--transition-duration);
+  }
+  
+  .toggleButton:hover {
+    background: var(--button-hover);
+    transform: scale(1.05);
+  }
+  
+  .toggleButton:active {
+    background: var(--button-active);
+    transform: scale(1);
+  }
